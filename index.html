@@ -8,22 +8,26 @@
 <body>
     <header> <!--Esta es una etiqueta semántica de cabecera-->
         <nav> <!--Barra de navegación-->
+            <div>
+                <span>🍰 Pastelería Muffin 🍩</span>
+            </div>
             <ul> <!--Esta es una lista desordenada-->
-                <li> <a href="">Nosotros</a></li>
-                <li> <a href="">Promociones</a></li>
-                <li> <a href="">Menu</a></li>
-                <li> <a href="">Contacto</a></li>
-            </ul>
+                <li> <a href="#nosotros">Nosotros</a></li>
+                <li> <a href="#promociones">Promociones</a></li>
+                <li> <a href="#menu">Menu</a></li>
+                <li> <a href="#nuestro blog">Nuestro Blog</a></li>
+                <li> <a href="#contacto">Contacto</a></li>
+            </ul> <!--Cada "href" nos lleva a un enlace interno de la misma página web-->
         </nav> 
     </header>
 
     <main> <!--Información principal de mi página-->
-        <article> <!--Sección de Nosotros-->
+        <article id="nosotros"> <!--Sección de Nosotros-->
             <h1>Pastelería Muffin</h1>
             <p>En Pastelería Muffin, nos dedicamos a endulzar tus días con nuestras deliciosas creaciones. Desde nuestros famosos muffins hasta pasteles personalizados, cada bocado está hecho con amor y los mejores ingredientes. Ven y descubre por qué somos la pastelería favorita de la ciudad.</p>
         </article>
 
-        <section> <!--Sección de Promociones-->
+        <section id="promociones"> <!--Sección de Promociones-->
             <h2>Promociones</h2>
             <ul>
                 <li><strong>2X1</strong>en Muffins los Lunes y Miercoles</li>
@@ -32,7 +36,7 @@
             </ul>
         </section>
 
-        <section> <!--Sección de Menu-->
+        <section id="menu"> <!--Sección de Menu-->
             <h2>Menu</h2>
             <!--Tarjetas de postres que vendemos-->
             <div>
@@ -45,7 +49,7 @@
         </section>
 
 
-        <section> <!--Sección de Receta del Mes-->
+        <section id="nuestro blog"> <!--Sección de Receta del Mes-->
             <h2>Receta del Mes</h2>
             <h3>Muffin de Zanahoria</h3>
             <p>¡Tu pastel favorito, hecho muffin!
@@ -129,7 +133,7 @@ Una delicia perfecta para un gustito personal.</p>
                     <label>Imagen de referencia:</label>
                     <input type="file" accept="image/*">
 
-                <button type="submit" style="border-radius: 8px; background-color: chocolate; color: white;">Enviar pedido</button>
+                <button type="submit">Enviar pedido</button>
             </form>
         </section>
 
